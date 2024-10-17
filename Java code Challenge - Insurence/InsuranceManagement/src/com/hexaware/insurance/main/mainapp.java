@@ -78,8 +78,7 @@ public class mainapp {
 					Policy retrieve = policyservice.getPolicy(policyId);
 				} catch (PolicyNotFoundException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+					System.err.println("Policy not found");				}
 				
 				break;
 				
@@ -143,7 +142,7 @@ public class mainapp {
 					}
 				} catch (PolicyNotFoundException e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					System.err.println("Policy Not Found");
 				}
 				
 				break;
